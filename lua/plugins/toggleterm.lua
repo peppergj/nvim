@@ -4,6 +4,7 @@ return {
   config = function()
     require("toggleterm").setup{
       direction = "vertical", -- terminal on side, set to float if wanting in the middle yay
+	  size = function() return vim.o.columns*0.5 end,
       shade_terminals = true,
       start_in_insert = true,
       persist_size = true,
