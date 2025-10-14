@@ -56,14 +56,6 @@ return {
 					},
 				},
 			})
-
-			require("mason-lspconfig").setup_handlers({
-			  function(server_name)
-				if server_name ~= "rust_analyzer" then
-				  lspconfig[server_name].setup(default_server_opts)
-				end
-			  end,
-			})
 		end
 	}
 }
